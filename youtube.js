@@ -54,7 +54,7 @@ function main(id, start, end, lang) {
 		  replay.innerHTML = "To watch again, please reload the page.";
 		  replay.style.color = 'yellow';
 		  
-		  //player.parentNode.replaceChild(replay, player);
+		  player.parentNode.replaceChild(replay, player);
           done = true;
         }
       }
