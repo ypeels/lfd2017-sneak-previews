@@ -7,7 +7,7 @@ function main(id, start, end, lang) {
       var player;
       function foo() { //onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '360',//'720',
+          height: '360',//'720', // actually, youtube best quality is currently 480p?
           width: '640', //'1280',
           videoId: id, 
 		  
@@ -15,10 +15,10 @@ function main(id, start, end, lang) {
 			'controls': 0, // hide progress bar - can't click outside the video clip
 			'disablekb': 1, // disable keyboard, which MIGHT be used to skip outside the segment
 			'rel': 0, // hide related content at end of video (irrelevant with onPlayerStateChange())
-			//'vq': 720, // actually, youtube highest quality is currently 480p?
+			//'vq': 720, 
 			
 			'hl': lang, // changes subtitle (and controls) language
-			'cc_load_policy': 1, // force-display subtitles	
+			'cc_load_policy': 1, // force-display subtitles	(important for Portuguese video)
 			
 			//'autoplay': 1, // off by default; ENABLED to minimize chances of seeing Youtube link?
 			//'showinfo': 0, // moves lecture title/link (top-left) into YouTube logo (bottom-right)...
