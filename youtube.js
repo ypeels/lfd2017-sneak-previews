@@ -1,3 +1,10 @@
+function setup() {
+	  var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+
 function main(id, start, end, lang) {
 		
 	  lang = lang || 'en_US'; // default value (makes `lang` optional)

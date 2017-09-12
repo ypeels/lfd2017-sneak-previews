@@ -23,12 +23,8 @@
     <div id="player"></div>
 
     <script type="text/javascript">	
-	  // TODO: move this into youtube.js somehow (avoid copy/pasting into html files)
 	  // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	  setup();
 	  
 	  //////////////////////////
 	  /// 2.5 SELECT LECTURE ///
